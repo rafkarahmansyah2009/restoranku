@@ -20,8 +20,7 @@ class ItemFactory extends Factory
         return [
             'name' => $this->faker->word(),
             'category_id' => $this->faker->numberBetween(1, 2),
-            'price' => $this->faker->randomFloat(2, 1000, 100000),
-            'stock' => $this->faker->numberBetween(1, 100),
+            'price' => $this->faker->numberBetween(5000, 150000),
             'description' => $this->faker->text(),
             'img' => $this->faker->imageUrl(),
             'is_active' => $this->faker->boolean(),
